@@ -23,7 +23,6 @@ app.use(morgan('combined', {
     },
 }));
 
-
 app.use('/product', productController);
 app.use('/order', orderController);
 app.use('/user', userController);
