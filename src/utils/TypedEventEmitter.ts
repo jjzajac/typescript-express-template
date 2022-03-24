@@ -7,7 +7,7 @@ export type CtorT<K extends string, T, En extends Event<K, T>> = {
     readonly [E in En as E['eventKind']]: (_event: E['type']) => E;
 }
 
- type LstnT<K extends string, T, En extends Event<K, T>> = {
+type LstnT<K extends string, T, En extends Event<K, T>> = {
     // eslint-disable-next-line no-unused-vars
     readonly [E in En as E['eventKind']]: (_event: E['type']) => void;
 }
